@@ -1,0 +1,89 @@
+{
+  "nav": {
+    "home": "ទំព័រដើម",
+    "products": "ផលិតផល",
+    "categories": "ប្រភេទ",
+    "about": "អំពីយើង",
+    "contact": "ទំនាក់ទំនង"
+  },
+  "welcome": "សូមស្វាគមន៍មកកាន់ KhmerMarket",
+  "startShopping": "ចាប់ផ្តើមទិញឥឡូវនេះ",
+  "popularCategories": "ប្រភេទពេញនិយម",
+  "viewAllProducts": "មើលផលិតផលទាំងអស់",
+  "whyChoose": {
+    "title": "ហេតុអ្វីជ្រើសរើស KhmerMarket?",
+    "fastDelivery": {
+      "title": "ការដឹកជញ្ជូនរហ័ស",
+      "description": "ការដឹកជញ្ជូនឆាប់រហ័ស និងទុកចិត្តបានទូទាំងកម្ពុជា"
+    },
+    "securePayment": {
+      "title": "ការទូទាត់មានសុវត្ថិភាព",
+      "description": "ជម្រើសទូទាត់មានសុវត្ថិភាពជាច្រើន រួមទាំង ABA និង Wing"
+    },
+    "localSellers": {
+      "title": "អ្នកលក់ក្នុងស្រុក",
+      "description": "គាំទ្រអាជីវកម្ម និងអ្នកផលិតកម្ពុជាក្នុងស្រុក"
+    }
+  },
+  "hero": {
+    "title": "សូមស្វាគមន៍មកកាន់ KhmerMarket",
+    "subtitle": "តភ្ជាប់អ្នកផលិតមូលដ្ឋានជាមួយអតិថិជន",
+    "cta": "ចាប់ផ្តើមទិញឥឡូវនេះ"
+  },
+  "categories": {
+    "electronics": "អេឡិចត្រូនិច",
+    "fashion": "ម៉ូដ",
+    "food": "អាហារ",
+    "home": "ផ្ទះ"
+  },
+  "footer": {
+    "description": "វេទិកាអេឡិចត្រូនិកឈានមុខគេនៅកម្ពុជា",
+    "quickLinks": "តំណភ្លាមៗ",
+    "customerService": "សេវាកម្មអតិថិជន",
+    "followUs": "តាមដានយើង",
+    "allRightsReserved": "រក្សាសិទ្ធិគ្រប់យ៉ាង"
+  },
+  "searchProducts": "ស្វែងរកផលិតផល...",
+  "account": "គណនី",
+  "wishlist": "បញ្ជីចូលចិត្ត",
+  "cart": "កន្រ្តក",
+  "language": "ភាសា",
+  "myOrders": "ការបញ្ជាទិញរបស់ខ្ញុំ",
+  "logout": "ចាកចេញ",
+  "seller": "អ្នកលក់",
+  "buyer": "អ្នកទិញ",
+  "admin": "អ្នកគ្រប់គ្រង",
+  "dashboard": "ផ្ទាំងគ្រប់គ្រង",
+  "settings": "ការកំណត់",
+  "currency": "រូបិយប័ណ្ណ",
+  "paymentMethod": "វិធីសាស្ត្រទូទាត់",
+  "cashOnDelivery": "ទូទាត់នៅពេលទទួល",
+  "onlinePayment": "ទូទាត់តាមអនឡាញ",
+  "contactUs": "ទាក់ទងយើងខ្ញុំ",
+  "aboutUs": "អំពីយើងខ្ញុំ",
+  "termsAndConditions": "លក្ខខណ្ឌ",
+  "privacyPolicy": "គោលការណ៍ឯកជនភាព",
+  "allRightsReserved": "រក្សាសិទ្ធិគ្រប់យ៉ាង",
+  "loading": "កំពុងផ្ទុក...",
+  "addToCart": "បញ្ចូលក្នុងកន្រ្តក",
+  "featuredProducts": "ផលិតផលពិសេស",
+  "newsletter": "ព័ត៌មានប្រចាំសប្តាហ៍",
+  "newsletterDescription": "ជាវដើម្បីទទួលបានការផ្តល់ជូនពិសេស និងព័ត៌មានថ្មីៗ",
+  "subscribe": "ជាវ",
+  "yourEmail": "អ៊ីមែលរបស់អ្នក",
+  "error": "កំហុស",
+  "success": "ជោគជ័យ",
+  "warning": "ព្រមាន",
+  "info": "ព័ត៌មាន",
+  "confirm": "បញ្ជាក់",
+  "cancel": "បោះបង់",
+  "save": "រក្សាទុក",
+  "delete": "លុប",
+  "edit": "កែសម្រួល",
+  "view": "មើល",
+  "close": "បិទ",
+  "back": "ត្រឡប់",
+  "next": "បន្ទាប់",
+  "previous": "មុន",
+  "submit": "ដាក់ស្នើ"
+}

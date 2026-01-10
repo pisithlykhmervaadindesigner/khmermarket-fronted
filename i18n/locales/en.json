@@ -1,0 +1,90 @@
+{
+  "welcome": "Welcome to KhmerMarket",
+  "nav": {
+    "home": "Home",
+    "products": "Products",
+    "categories": "Categories",
+    "about": "About",
+    "contact": "Contact",
+    "dashboard": "Dashboard"
+  },
+  "startShopping": "Start Shopping",
+  "popularCategories": "Popular Categories",
+  "viewAllProducts": "View All Products",
+  "whyChoose": {
+    "title": "Why Choose KhmerMarket?",
+    "fastDelivery": {
+      "title": "Fast Delivery",
+      "description": "Quick and reliable delivery across Cambodia"
+    },
+    "securePayment": {
+      "title": "Secure Payment",
+      "description": "Multiple secure payment options including ABA and Wing"
+    },
+    "localSellers": {
+      "title": "Local Sellers",
+      "description": "Support local Cambodian businesses and producers"
+    }
+  },
+  "hero": {
+    "title": "Welcome to KhmerMarket",
+    "subtitle": "Connecting Local Producers with Consumers",
+    "cta": "Start Shopping"
+  },
+  "categories": {
+    "electronics": "Electronics",
+    "fashion": "Fashion",
+    "food": "Food & Beverages",
+    "home": "Home & Living"
+  },
+  "footer": {
+    "description": "Premier e-commerce platform for Cambodia",
+    "quickLinks": "Quick Links",
+    "customerService": "Customer Service",
+    "followUs": "Follow Us",
+    "allRightsReserved": "All rights reserved"
+  },
+  "searchProducts": "Search products...",
+  "account": "Account",
+  "wishlist": "Wishlist",
+  "cart": "Cart",
+  "language": "Language",
+  "myOrders": "My Orders",
+  "logout": "Logout",
+  "seller": "Seller",
+  "buyer": "Buyer",
+  "admin": "Admin",
+  "dashboard": "Dashboard",
+  "settings": "Settings",
+  "currency": "Currency",
+  "paymentMethod": "Payment Method",
+  "cashOnDelivery": "Cash on Delivery",
+  "onlinePayment": "Online Payment",
+  "contactUs": "Contact Us",
+  "aboutUs": "About Us",
+  "termsAndConditions": "Terms and Conditions",
+  "privacyPolicy": "Privacy Policy",
+  "allRightsReserved": "All Rights Reserved",
+  "loading": "Loading...",
+  "addToCart": "Add to Cart",
+  "featuredProducts": "Featured Products",
+  "newsletter": "Newsletter",
+  "newsletterDescription": "Subscribe to get special offers and updates",
+  "subscribe": "Subscribe",
+  "yourEmail": "Your email",
+  "error": "Error",
+  "success": "Success",
+  "warning": "Warning",
+  "info": "Information",
+  "confirm": "Confirm",
+  "cancel": "Cancel",
+  "save": "Save",
+  "delete": "Delete",
+  "edit": "Edit",
+  "view": "View",
+  "close": "Close",
+  "back": "Back",
+  "next": "Next",
+  "previous": "Previous",
+  "submit": "Submit"
+}

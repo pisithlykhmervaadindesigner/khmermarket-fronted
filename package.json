@@ -1,0 +1,33 @@
+{
+  "name": "khmermarket-frontend",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "test": "vitest"
+  },
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@nuxtjs/i18n": "^10.2.1",
+    "@pinia/nuxt": "^0.5.1",
+    "@vueuse/nuxt": "^10.9.0",
+    "nuxt": "^3.x",
+    "pinia": "^2.1.7",
+    "vue": "^3.4.27",
+    "vue-router": "^4.3.3",
+    "vuetify": "^3.6.6"
+  },
+  "devDependencies": {
+    "@nuxt/devtools": "^3.1.1",
+    "@nuxt/types": "^2.18.1",
+    "sass": "^1.77.2",
+    "typescript": "^5.4.5",
+    "vite": "^7.3.1",
+    "vue-tsc": "^2.0.21"
+  }
+}
