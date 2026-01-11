@@ -1,32 +1,81 @@
 <template>
-  <v-container fluid class="pa-0">
-    <!-- Hero Section -->
-    <v-parallax
-        src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600"
-        :height="$vuetify.display.mdAndUp ? 500 : 400"
-    >
+  <v-app>
+    <!-- Top Navigation Bar (only when logged in) -->
+    <v-app-bar color="primary" dark v-if="authStore.isLoggedIn" class="elevation-2">
       <v-container>
-        <v-row align="center" justify="center">
-          <v-col cols="12" md="10" lg="8" class="text-center">
-            <h1 class="text-h4 text-md-h3 text-lg-h2 font-weight-bold text-white mb-4">
-              {{ t('welcome') }}
-            </h1>
-            <p class="text-h6 text-md-h5 text-white mb-6">
-              {{ t('heroSubtitle') }}
-            </p>
-            <v-btn
-                color="primary"
-                size="x-large"
-                @click="router.push('/products')"
-                class="mt-4"
-            >
-              {{ t('startShopping') }}
-              <v-icon end>mdi-arrow-right</v-icon>
-            </v-btn>
+        <v-row align="center">
+          <v-col cols="12">
+            <div class="d-flex align-center justify-space-between">
+              <!-- Welcome Message -->
+              <div class="d-flex align-center">
+                <v-icon class="mr-2">mdi-store</v-icon>
+                <span class="text-h6">{{ t('welcome') }}</span>
+              </div>
+              
+              <!-- Consistent Navigation Items -->
+              <div class="d-flex align-center">
+                <v-btn variant="text" @click="router.push('/')" class="text-white">
+                  <v-icon class="mr-2">mdi-home</v-icon>
+                  {{ t('home') }}
+                </v-btn>
+                
+                <v-btn variant="text" @click="router.push('/dashboard')" class="text-white">
+                  <v-icon class="mr-2">mdi-view-dashboard</v-icon>
+                  {{ t('dashboard') }}
+                </v-btn>
+                
+                <v-btn variant="text" @click="router.push('/profile')" class="text-white">
+                  <v-icon class="mr-2">mdi-account</v-icon>
+                  {{ t('profile') }}
+                </v-btn>
+                
+                <v-btn variant="text" @click="router.push('/settings')" class="text-white">
+                  <v-icon class="mr-2">mdi-cog</v-icon>
+                  {{ t('settings') }}
+                </v-btn>
+                
+                <v-divider vertical class="mx-2"></v-divider>
+                
+                <v-btn variant="text" @click="handleLogout" class="text-red">
+                  <v-icon class="mr-2">mdi-logout</v-icon>
+                  {{ t('logout') }}
+                </v-btn>
+              </div>
+            </div>
           </v-col>
         </v-row>
       </v-container>
-    </v-parallax>
+    </v-app-bar>
+    
+    <!-- Main Content -->
+    <v-container fluid class="pa-0">
+      <!-- Hero Section -->
+      <v-parallax
+          src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=1600"
+          :height="$vuetify.display.mdAndUp ? 500 : 400"
+      >
+        <v-container>
+          <v-row align="center" justify="center">
+            <v-col cols="12" md="10" lg="8" class="text-center">
+              <h1 class="text-h4 text-md-h3 text-lg-h2 font-weight-bold text-white mb-4">
+                {{ t('welcome') }}
+              </h1>
+              <p class="text-h6 text-md-h5 text-white mb-6">
+                {{ t('heroSubtitle') }}
+              </p>
+              <v-btn
+                  color="primary"
+                  size="x-large"
+                  @click="router.push('/products')"
+                  class="mt-4"
+              >
+                {{ t('startShopping') }}
+                <v-icon end>mdi-arrow-right</v-icon>
+              </v-btn>
+            </v-col>
+          </v-row>
+        </v-container>
+      </v-parallax>
 
     <!-- Categories Section -->
     <v-container class="py-8 py-md-12">
@@ -227,16 +276,67 @@
         </v-col>
       </v-row>
     </v-container>
-  </v-container>
+    </v-container>
+  </v-app>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
-import { useI18n } from 'vue-i18n'
+import { useAuthStore } from '~/stores/auth'
 
 const router = useRouter()
-const { t } = useI18n()
+const authStore = useAuthStore()
+
+// Logout functionality
+const handleLogout = async () => {
+  try {
+    await authStore.logout()
+    router.push('/login')
+  } catch (error) {
+    console.error('Logout failed:', error)
+    router.push('/login')
+  }
+}
+
+// Simple translation function
+const t = (key: string) => {
+  const translations: Record<string, string> = {
+    'welcome': 'KhmerMarket',
+    'heroSubtitle': 'Your trusted marketplace for quality products',
+    'popularCategories': 'Popular Categories',
+    'featuredProducts': 'Featured Products',
+    'addToCart': 'Add to Cart',
+    'viewAllProducts': 'View All Products',
+    'whyChoose.title': 'Why Choose Us',
+    'whyChoose.fastDelivery.title': 'Fast Delivery',
+    'whyChoose.fastDelivery.description': 'Quick and reliable delivery to your doorstep',
+    'whyChoose.securePayment.title': 'Secure Payment',
+    'whyChoose.securePayment.description': 'Safe and secure payment methods',
+    'whyChoose.localSellers.title': 'Local Sellers',
+    'whyChoose.localSellers.description': 'Support local businesses and sellers',
+    'newsletter': 'Subscribe to Our Newsletter',
+    'newsletterDescription': 'Get the latest updates and exclusive offers',
+    'yourEmail': 'Your email',
+    'subscribe': 'Subscribe',
+    'startShopping': 'Start Shopping',
+    'categories.electronics': 'Electronics',
+    'categories.fashion': 'Fashion',
+    'categories.food': 'Food & Groceries',
+    'categories.home': 'Home & Garden',
+    'loggedIn': 'Logged in',
+    'dashboard': 'Dashboard',
+    'profile': 'Profile',
+    'settings': 'Settings',
+    'logout': 'Logout',
+    'home': 'Home',
+    'products': 'Products',
+    'categories': 'Categories',
+    'myOrders': 'My Orders',
+    'wishlist': 'Wishlist'
+  }
+  return translations[key] || key
+}
 
 // Categories
 const categories = [

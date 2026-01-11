@@ -16,7 +16,7 @@
     "@nuxtjs/i18n": "^10.2.1",
     "@pinia/nuxt": "^0.5.1",
     "@vueuse/nuxt": "^10.9.0",
-    "nuxt": "^3.x",
+    "nuxt": "^3.6.5",
     "pinia": "^2.1.7",
     "vue": "^3.4.27",
     "vue-router": "^4.3.3",

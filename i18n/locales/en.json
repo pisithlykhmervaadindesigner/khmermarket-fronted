@@ -86,5 +86,24 @@
   "back": "Back",
   "next": "Next",
   "previous": "Previous",
-  "submit": "Submit"
+  "submit": "Submit",
+  "login": {
+    "title": "Sign In",
+    "subtitle": "Welcome back! Please sign in to your account",
+    "email": "Email Address",
+    "password": "Password",
+    "rememberMe": "Remember me",
+    "signIn": "Sign In",
+    "noAccount": "Don't have an account?",
+    "signUp": "Sign Up",
+    "forgotPassword": "Forgot your password?",
+    "success": "Login successful! Redirecting...",
+    "failed": "Login failed. Please check your credentials and try again."
+  },
+  "validation": {
+    "emailRequired": "Email is required",
+    "emailInvalid": "Please enter a valid email address",
+    "passwordRequired": "Password is required",
+    "passwordMinLength": "Password must be at least 6 characters long"
+  }
 }
